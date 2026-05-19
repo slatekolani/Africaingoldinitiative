@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#1a3d5c"/>
+  <circle cx="150" cy="115" r="68" fill="#c4991e" opacity="0.25"/>
+  <circle cx="150" cy="108" r="54" fill="#c4991e"/>
+  <text x="150" y="122" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="bold"
+        fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MS</text>
+  <path d="M20,300 Q20,190 150,190 Q280,190 280,300 Z" fill="#c4991e" opacity="0.5"/>
+  <path d="M55,300 Q55,210 150,210 Q245,210 245,300 Z" fill="#ffffff" opacity="0.15"/>
+</svg>

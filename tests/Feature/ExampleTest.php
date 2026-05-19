@@ -18,4 +18,20 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function testContactFormCanSubmit()
+    {
+        config(['mail.default' => 'array']);
+
+        $response = $this->postJson('/contact', [
+            'name' => 'Website Visitor',
+            'email' => 'visitor@example.com',
+            'phone' => '+255745654722',
+            'country' => 'Tanzania',
+            'message' => 'I would like to learn more about Africa In Gold.',
+        ]);
+
+        $response->assertOk()
+            ->assertJsonStructure(['message']);
+    }
 }

@@ -210,12 +210,12 @@
         </div>
         <div class="team-grid">
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="team-icon">
+                    <img src="{{ asset('img/Team/Mathew Mwalongo.jpeg') }}" alt="Mathew Augustino Mwalongo">
+                </div>
                 <div class="member-info">
-                    <h3>Winfred Nziku</h3>
-                    <h3>Winfred Nziku</h3>
-                    <p>{{ __('messages.team_founder') }}</p>
+                    <h3>Mathew Augustino Mwalongo</h3>
+                    <p>Executive Director</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
@@ -223,35 +223,38 @@
                 </div>
             </div>
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
-                <div class="member-info">
-                    <h3>Mathew Mwalongo</h3>
-                    <p>{{ __('messages.team_chairperson') }}</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                <div class="team-icon">
+                    <img src="{{ asset('img/Team/Kelvin Chami.jpeg') }}" alt="Kelvin Chami">
                 </div>
-            </div>
-            <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
-                <div class="member-info">
-                    <h3>Marry Wellah</h3>
-                    <p>{{ __('messages.team_secretary') }}</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
                 <div class="member-info">
                     <h3>Kelvin Chami</h3>
-                    <p>{{ __('messages.team_financial_manager') }}</p>
+                    <p>Head of Strategy &amp; Policy</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <div class="team-icon">
+                    <img src="{{ asset('img/Team/Augustino Armando.jpeg') }}" alt="Augustino Armando">
+                </div>
+                <div class="member-info">
+                    <h3>Augustino Armando</h3>
+                    <p>Head of Innovation &amp; Enterprise</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <div class="team-icon">
+                    <img src="{{ asset('img/Team/Agnes Mangi.jpeg') }}" alt="Agness Mangi">
+                </div>
+                <div class="member-info">
+                    <h3>Agness Mangi</h3>
+                    <p>Head of Finance &amp; Administration</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>

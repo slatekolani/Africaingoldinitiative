@@ -36,13 +36,20 @@
             color: #2c5282;
             margin-bottom: 1rem;
             background: #e6f3ff;
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 1rem;
+            overflow: hidden;
+        }
+        .team-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         * {

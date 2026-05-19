@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'info@africaingoldinitiative.or.tz'),
+        'name' => env('MAIL_FROM_NAME', 'Africa In Gold Initiative'),
     ],
 
     /*
