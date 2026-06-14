@@ -11,8 +11,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('fonts/fontawesome/css/all.min.css') }}">
 
     <!-- Favicons -->
      
@@ -35,20 +34,23 @@
             font-size: 2.5rem;
             color: #2c5282;
             margin-bottom: 1rem;
-            background: #e6f3ff;
-            width: 120px;
-            height: 120px;
+            background: #ffffff;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 1rem;
             overflow: hidden;
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 0 3px #e4b84d, 0 4px 12px rgba(0, 0, 0, 0.15);
         }
         .team-icon img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center top;
             display: block;
         }
 
@@ -70,13 +72,13 @@
             position: fixed;
             width: 100%;
             z-index: 1000;
-            transition: background-color 0.4s ease;
-            background-color: rgba(37, 37, 37, 1);
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
+            background-color: rgba(37, 37, 37, 0.35);
         }
 
         .header-scrolled {
-            background-color: rgba(37, 37, 37, 0.95);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            background-color: rgba(37, 37, 37, 1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .container {
@@ -169,6 +171,7 @@
             position: relative;
             height: 120vh;
             overflow: hidden;
+            padding: 0;
         }
         
     
@@ -177,7 +180,7 @@
             width: 100%;
             height: 100%;
             position: relative;
-            margin-top: 50px;
+            margin-top: 0;
         }
 
         .carousel-item {
@@ -564,12 +567,14 @@
             background-color: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
+            padding-top: 25px;
         }
 
         .team-member:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
         }
 
         .member-photo {
@@ -849,24 +854,30 @@
 
         .social-media {
             display: flex;
-            gap: 15px;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
         .social-media a {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.35);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--light);
+            color: #ffffff;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
 
         .social-media a:hover {
             background-color: var(--primary);
-            transform: translateY(-5px);
+            border-color: var(--primary);
+            color: var(--dark);
+            transform: translateY(-4px);
         }
 
         .footer-bottom {
@@ -1003,7 +1014,7 @@
             width: 100%;
             height: 100%;
             position: relative;
-            margin-top: 30px;
+            margin-top: 0;
         }
 
             .carousel-content h1 {
@@ -1450,53 +1461,51 @@
 
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+            hamburger?.classList.remove('active');
+            navMenu?.classList.remove('active');
         });
     });
 
     // Header Scroll Effect
     const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('header-scrolled');
-        } else {
-            header.classList.remove('header-scrolled');
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('header-scrolled', window.scrollY > 50);
+        });
+    }
 
     // Carousel
     const carouselItems = document.querySelectorAll('.carousel-item');
     const indicators = document.querySelectorAll('.carousel-indicators .indicator');
     let currentIndex = 0;
 
-    function showSlide(index) {
-        if (index >= carouselItems.length) index = 0;
-        if (index < 0) index = carouselItems.length - 1;
-        carouselItems.forEach(item => item.classList.remove('active'));
-        indicators.forEach(ind => ind.classList.remove('active'));
-        carouselItems[index].classList.add('active');
-        indicators[index].classList.add('active');
-        currentIndex = index;
-    }
+    if (carouselItems.length && indicators.length) {
+        function showSlide(index) {
+            if (index >= carouselItems.length) index = 0;
+            if (index < 0) index = carouselItems.length - 1;
+            carouselItems.forEach(item => item.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            carouselItems[index].classList.add('active');
+            indicators[index]?.classList.add('active');
+            currentIndex = index;
+        }
 
-    function nextSlide() {
-        showSlide(currentIndex + 1);
-    }
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
 
-    indicators.forEach((indicator, i) => {
-        indicator.addEventListener('click', () => {
-            showSlide(i);
+        indicators.forEach((indicator, i) => {
+            indicator.addEventListener('click', () => showSlide(i));
         });
-    });
 
-    let carouselInterval = setInterval(nextSlide, 5000);
+        let carouselInterval = setInterval(nextSlide, 5000);
 
-    const carousel = document.querySelector('.carousel');
-    carousel.addEventListener('mouseenter', () => clearInterval(carouselInterval));
-    carousel.addEventListener('mouseleave', () => {
-        carouselInterval = setInterval(nextSlide, 5000);
-    });
+        const carousel = document.querySelector('.carousel');
+        carousel?.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+        carousel?.addEventListener('mouseleave', () => {
+            carouselInterval = setInterval(nextSlide, 5000);
+        });
+    }
 
     // Scroll Animations
     const animateElements = document.querySelectorAll('.animate-on-scroll');
@@ -1512,22 +1521,20 @@
 
     // Scroll to Top
     const scrollTopBtn = document.querySelector('.scroll-top');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            scrollTopBtn.classList.add('show');
-        } else {
-            scrollTopBtn.classList.remove('show');
-        }
-    });
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('show', window.scrollY > 300);
+        });
 
-    scrollTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     // Dynamic Background Animation
     const animatedBg = document.querySelector('.animated-bg');
-    const circles = animatedBg.querySelectorAll('.circle');
-    const squares = animatedBg.querySelectorAll('.square');
+    const circles = animatedBg?.querySelectorAll('.circle') ?? [];
+    const squares = animatedBg?.querySelectorAll('.square') ?? [];
 
     function animateBackground() {
         circles.forEach((circle, index) => {
@@ -1554,7 +1561,7 @@
 
         // Close dropdown when clicking outside
         document.addEventListener('click', (e) => {
-            if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            if (dropdownToggle && dropdownMenu && !dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
                 dropdownMenu.classList.remove('show');
                 dropdownToggle.classList.remove('active');
             }
@@ -1579,7 +1586,7 @@
         let isDragging = false;
 
         const galleryTrack = document.querySelector('.gallery-track');
-        if (window.innerWidth <= 992) {
+        if (galleryTrack && window.innerWidth <= 992) {
             galleryTrack.addEventListener('touchstart', (e) => {
                 startX = e.touches[0].clientX;
                 isDragging = true;

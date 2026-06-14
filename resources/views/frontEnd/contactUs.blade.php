@@ -37,14 +37,7 @@
         <!-- Contact Details -->
         @include('frontEnd.includes.contactForms')
 
-        <!-- Map Placeholder (Optional) -->
-        <div class="contact-map animate-on-scroll">
-            <h3>{{ __('messages.contact_map_title') }}</h3>
-            <div class="map-placeholder">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507137.10782849387!2d38.92393044445903!3d-6.768797686436148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4bae169bd6f1%3A0x940f6b26a086a1dd!2sDar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1744541391041!5m2!1sen!2stz" style="border:0;width:100%;height:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>{{ __('messages.contact_map_desc') }}</p>
-            </div>
-        </div>
+
     </div>
 </section>
 

@@ -89,9 +89,9 @@
                         <span>{{ __('messages.environmental_conservation') }}</span>
                     </div>
                 </div>
-                <div class="media-video">
+                {{-- <div class="media-video">
                     <iframe src="https://www.youtube.com/embed/uteR44ZjYRI" title="Africa In Gold Initiative Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                </div> --}}
             </div>
         </div>
         <br>
@@ -211,54 +211,42 @@
         <div class="team-grid">
             <div class="team-member animate-on-scroll">
                 <div class="team-icon">
-                    <img src="{{ asset('img/Team/Mathew Mwalongo.jpeg') }}" alt="Mathew Augustino Mwalongo">
+                    <img src="{{ asset('img/Team/Mathew Mwalongo_white.png') }}" alt="Mathew Augustino Mwalongo">
                 </div>
                 <div class="member-info">
                     <h3>Mathew Augustino Mwalongo</h3>
                     <p>Executive Director</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                
                 </div>
             </div>
             <div class="team-member animate-on-scroll">
                 <div class="team-icon">
-                    <img src="{{ asset('img/Team/Kelvin Chami.jpeg') }}" alt="Kelvin Chami">
+                    <img src="{{ asset('img/Team/Kelvin Chami_white.png') }}" alt="Kelvin Chami">
                 </div>
                 <div class="member-info">
                     <h3>Kelvin Chami</h3>
                     <p>Head of Strategy &amp; Policy</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                   
                 </div>
             </div>
             <div class="team-member animate-on-scroll">
                 <div class="team-icon">
-                    <img src="{{ asset('img/Team/Augustino Armando.jpeg') }}" alt="Augustino Armando">
+                    <img src="{{ asset('img/Team/Augustino Armando_white.png') }}" alt="Augustino Armando">
                 </div>
                 <div class="member-info">
                     <h3>Augustino Armando</h3>
                     <p>Head of Innovation &amp; Enterprise</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                   
                 </div>
             </div>
             <div class="team-member animate-on-scroll">
                 <div class="team-icon">
-                    <img src="{{ asset('img/Team/Agnes Mangi.jpeg') }}" alt="Agness Mangi">
+                    <img src="{{ asset('img/Team/Agnes Mangi_white.png') }}" alt="Agness Mangi">
                 </div>
                 <div class="member-info">
                     <h3>Agness Mangi</h3>
                     <p>Head of Finance &amp; Administration</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                   
                 </div>
             </div>
         </div>

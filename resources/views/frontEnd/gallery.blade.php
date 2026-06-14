@@ -116,7 +116,22 @@
             </div>
             <div class="gallery-item animate-on-scroll">
                 <div class="gallery-media">
-                    <img src="{{ asset('/Web Images/WhatsApp Image 2025-04-11 at 23.33.45.jpeg') }}" alt="{{ __('messages.gallery_alt8') }}" data-type="image">   
+                    <img src="{{ asset('/Web Images/WhatsApp Image 2025-04-11 at 23.33.45.jpeg') }}" alt="{{ __('messages.gallery_alt8') }}" data-type="image">
+                </div>
+            </div>
+
+            <!-- Partnership & Collaboration -->
+            <div class="gallery-item partnership-item animate-on-scroll">
+                <div class="gallery-media">
+                    <img src="{{ asset('img/WhatsApp Image 2026-05-19 at 19.50.38.jpeg') }}" alt="Partnership and Collaboration - Bagamoyo Charity Tour" data-type="image">
+                    <div class="partnership-overlay">
+                        <span class="partnership-tag">Partnership &amp; Collaboration</span>
+                        <h3>Bagamoyo Charity Tour</h3>
+                        <p>AIG joined TIA Dar es Salaam Campus volunteers to support vulnerable children at an orphanage in Bagamoyo — providing material &amp; financial aid and moments of fellowship and hope.</p>
+                    </div>
+                </div>
+                <div class="gallery-caption">
+                    <p>Partnership &amp; Collaboration — Bagamoyo Charity Tour with TIA Dar es Salaam Campus</p>
                 </div>
             </div>
         </div>
@@ -400,6 +415,56 @@
 
     .lightbox-nav.next {
         right: 20px;
+    }
+
+    /* Partnership item */
+    .partnership-item {
+        grid-column: span 1;
+    }
+
+    .partnership-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.35) 60%, transparent 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.35s ease;
+    }
+
+    .partnership-item:hover .partnership-overlay {
+        opacity: 1;
+    }
+
+    .partnership-tag {
+        display: inline-block;
+        background: var(--primary);
+        color: var(--dark);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 8px;
+        align-self: flex-start;
+    }
+
+    .partnership-overlay h3 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 6px;
+    }
+
+    .partnership-overlay p {
+        font-size: 0.82rem;
+        line-height: 1.45;
+        color: rgba(255,255,255,0.88);
+        margin: 0;
     }
 
     /* CTA Section */

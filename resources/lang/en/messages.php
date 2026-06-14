@@ -150,8 +150,8 @@ return [
             'venture_tech_more' => 'Supporting 22 innovators across 6 teams with 24/7 internet and resources.',
             'venture_tech_alt' => 'Innovators at Venture Tech Academy',
             'venture_tech_caption' => 'Building tomorrow’s tech leaders',
-            'youth_empowerment_title' => 'Outreach Program',
-            'youth_empowerment_desc' => 'Dar, Muhimbili National hospital where we visited kids suffering from Cancer and provided them with the necessities that could help in day to day activities among others including balls, books, pencils, paints. 
+            'youth_empowerment_title' => 'Dense Eco-Living Project',
+            'youth_empowerment_desc' => 'An initiative that promotes green living, proper waste management, and circular economy practices within communities. 
             Caleb orphanage in Buza, the environmental education was provided too as part of the visit with which they received dustbins in addition to food items including rice and maize flour..',
             'youth_empowerment_alt' => 'Outreach Program to Muhimbili national hospital',
             'youth_empowerment_caption' => 'Empowering the next generation',
@@ -167,8 +167,8 @@ return [
             'community_cleanups_desc' => 'Mobilizing youth to clean and beautify their neighborhoods, fostering civic pride.',
             'community_cleanups_alt' => 'Team cleaning community',
             'community_cleanups_caption' => 'Cleaning for a better tomorrow',
-            'tech_workshops_title' => 'Tech Workshops',
-            'tech_workshops_desc' => 'Hands-on sessions teaching coding, robotics, and digital skills to spark innovation.',
+            'tech_workshops_title' => 'Outreach Program',
+            'tech_workshops_desc' => 'Dar, Muhimbili National hospital where we visited kids suffering from Cancer and provided them with the necessities that could help in day to day activities among others including balls, books, pencils, paints.',
             'tech_workshops_alt' => 'Youth in tech workshop',
             'tech_workshops_caption' => 'Sparking tech innovation',
             'entrepreneurship_bootcamp_title' => 'Entrepreneurship Bootcamp',

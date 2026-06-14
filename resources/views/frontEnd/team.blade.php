@@ -36,7 +36,7 @@
             <!-- Team Member 1: Mathew Augustino Mwalongo -->
             <div class="team-member animate-on-scroll">
                 <div class="hexagon">
-                    <img src="{{ asset('img/Team/Mathew Mwalongo.jpeg') }}" alt="{{ __('messages.team_member1_alt') }}">
+                    <img src="{{ asset('img/Team/Mathew Mwalongo_white.png') }}" alt="{{ __('messages.team_member1_alt') }}">
                 </div>
                 <h3>{{ __('messages.team_member1_name') }}</h3>
                 <p class="role">{{ __('messages.team_member1_role') }}</p>
@@ -48,7 +48,7 @@
             <!-- Team Member 2: Kelvin Chami -->
             <div class="team-member animate-on-scroll">
                 <div class="hexagon">
-                    <img src="{{ asset('img/Team/Kelvin Chami.jpeg') }}" alt="{{ __('messages.team_member2_alt') }}">
+                    <img src="{{ asset('img/Team/Kelvin Chami_white.png') }}" alt="{{ __('messages.team_member2_alt') }}">
                 </div>
                 <h3>{{ __('messages.team_member2_name') }}</h3>
                 <p class="role">{{ __('messages.team_member2_role') }}</p>
@@ -60,7 +60,7 @@
             <!-- Team Member 3: Augustino Armando -->
             <div class="team-member animate-on-scroll">
                 <div class="hexagon">
-                    <img src="{{ asset('img/Team/Augustino Armando.jpeg') }}" alt="{{ __('messages.team_member3_alt') }}">
+                    <img src="{{ asset('img/Team/Augustino Armando_white.png') }}" alt="{{ __('messages.team_member3_alt') }}">
                 </div>
                 <h3>{{ __('messages.team_member3_name') }}</h3>
                 <p class="role">{{ __('messages.team_member3_role') }}</p>
@@ -72,7 +72,7 @@
             <!-- Team Member 4: Brayson Nziku -->
             <div class="team-member animate-on-scroll">
                 <div class="hexagon">
-                    <img src="{{ asset('img/Team/Brayson Nziku.jpeg') }}" alt="{{ __('messages.team_member4_alt') }}">
+                    <img src="{{ asset('img/Team/Brayson Nziku_white.png') }}" alt="{{ __('messages.team_member4_alt') }}">
                 </div>
                 <h3>{{ __('messages.team_member4_name') }}</h3>
                 <p class="role">{{ __('messages.team_member4_role') }}</p>
@@ -84,7 +84,7 @@
             <!-- Team Member 5: Athuman Salmin -->
             <div class="team-member animate-on-scroll">
                 <div class="hexagon">
-                    <img src="{{ asset('img/Team/Athuman Salmin.jpeg') }}" alt="{{ __('messages.team_member5_alt') }}">
+                    <img src="{{ asset('img/Team/Athuman Salmin_white.png') }}" alt="{{ __('messages.team_member5_alt') }}">
                 </div>
                 <h3>{{ __('messages.team_member5_name') }}</h3>
                 <p class="role">{{ __('messages.team_member5_role') }}</p>
@@ -108,7 +108,7 @@
             <!-- Team Member 7: Agness Mangi -->
             <div class="team-member animate-on-scroll">
                 <div class="hexagon">
-                    <img src="{{ asset('img/Team/Agnes Mangi.jpeg') }}" alt="{{ __('messages.team_member7_alt') }}">
+                    <img src="{{ asset('img/Team/Agnes Mangi_white.png') }}" alt="{{ __('messages.team_member7_alt') }}">
                 </div>
                 <h3>{{ __('messages.team_member7_name') }}</h3>
                 <p class="role">{{ __('messages.team_member7_role') }}</p>
@@ -331,13 +331,14 @@
         margin: 0 auto 20px;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         overflow: hidden;
-        background-color: var(--primary);
+        background-color: #ffffff;
     }
 
     .hexagon img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center top;
         display: block !important;
         transition: transform 0.5s ease;
     }
