@@ -22,8 +22,8 @@
                 <div class="social-media">
                     <a href="https://x.com/Africa_inGold" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/africaingoldinitiative?igsh=MThlc282dmV6NWp6aA==" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/africa-in-gold-initiative/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://youtube.com/@aig7187?si=MxIYgeqKsfqPFUAg" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/africa-in-gold-initiative-39a802403/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@africaingoldinitiative/shorts" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
